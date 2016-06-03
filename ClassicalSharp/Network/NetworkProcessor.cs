@@ -127,7 +127,7 @@ namespace ClassicalSharp.Network {
 			}
 			try {
 				writer.Send();
-			} catch( IOException ex ) {
+			} catch( IOException ) {
 				// NOTE: Not immediately disconnecting, because it means we miss out on kick messages sometimes.
 				//ErrorHandler.LogError( "writing packets", ex );
 				//game.Disconnect( "&eLost connection to the server", "I/O Error while writing packets" );
